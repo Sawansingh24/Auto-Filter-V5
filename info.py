@@ -42,9 +42,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "projectnv")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+m5m21ol45f9mYzg1')
+GRP_LNK = environ.get('GRP_LNK', 't.me/+m5m21ol45f9mYzg1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/VisionBackup')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+m5m21ol45f9mYzg1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+m5m21ol45f9mYzg1')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
