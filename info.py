@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '16445683'))
-API_HASH = environ.get('API_HASH', 'd0852e13eee2389ff2d9183b00649547')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5922060191:AAEWZQMZR0fwRX9v8xHwQRdsVQjH1RPg8lU")
+API_ID = int(environ.get('API_ID', '23640300'))
+API_HASH = environ.get('API_HASH', 'b43066e201bfc457ad566e623fd74dab')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6002135193:AAFzYPfQiQ_6vKlYVNngKtW06DlETC9e-dU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,8 +27,8 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/07c14729659c7c2b99f5a.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5651594253').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001814608033').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5149183428').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001802248939').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -37,25 +37,25 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Sawansingh:Sawansingh@cluster0.uiuhxxj.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Sawansingh")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://projectnv:projectnv321@cluster0.wieiqcz.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "projectnv")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movieofficialgroup')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vguihv')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/movieofficialgroup')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+m5m21ol45f9mYzg1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/VisionBackup')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+m5m21ol45f9mYzg1')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001781991569))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001814608033))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/vguihv')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/cw_backup/23')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001844379835))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001802248939))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/MOVIES_RCN')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://youtu.be/zwHJLCrri6w')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001843498488))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001843498488))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001606185333))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001606185333))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
@@ -86,7 +86,7 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 15))
 # URL SHORTNER
 
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '51b286166adce93a0cb045024187e4c71de64c46')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'bf56e643ddbd84748b7567d820d8c51b44f0bca7')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
