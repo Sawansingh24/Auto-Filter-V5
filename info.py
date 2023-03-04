@@ -44,11 +44,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 't.me/+m5m21ol45f9mYzg1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/VisionBackup')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+m5m21ol45f9mYzg1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+M58gfU0jDOc3YjFl')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001844379835))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001818643949))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001802248939))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/MOVIES_RCN')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://youtu.be/zwHJLCrri6w')
